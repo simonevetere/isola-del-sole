@@ -1051,3 +1051,7 @@ figure {
   border-bottom: 1px solid #fefefe;
   margin-bottom: 5%;
 }
+
+.section {
+  margin-bottom: 20px;
+}

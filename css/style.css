@@ -756,7 +756,7 @@ figure {
 }
 
 .js .animate-box {
-  opacity: 0;
+  opacity: 1;
 }
 
 #fh5co-wrapper {
@@ -1047,7 +1047,7 @@ figure {
 .mydiv {
   color: #fefefe;
   background-color: transparent;
-  border-radius: 10px;
-  border: 5px solid #fefefe;
+  border-top: 1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
   margin-bottom: 5%;
 }

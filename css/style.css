@@ -1050,8 +1050,16 @@ figure {
   border-top: 1px solid #fefefe;
   border-bottom: 1px solid #fefefe;
   margin-bottom: 5%;
+  padding: 20px;
 }
 
 .section {
   margin-bottom: 20px;
+}
+
+#contatti {
+      /* display: block; */
+    position: relative;
+    /* z-index: -1; */
+    bottom: 0px;
 }

@@ -1,37 +1,42 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+// Check the current URL
+const currentUrl = window.location.href;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+if (currentUrl === 'http://127.0.0.1:8082/isola.html' || currentUrl === 'http://127.0.0.1:8082/balestrate.html') {
+	var slideIndex = 1;
+	showDivs(slideIndex);
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
 
-var slideIndex2 = 1;
-showDivs2(slideIndex2);
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length} ;
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	  }
+	  x[slideIndex-1].style.display = "block";
+	}
 
-function plusDivs(n) {
-  showDivs2(slideIndex2 += n);
-}
+	var slideIndex2 = 1;
+	showDivs2(slideIndex2);
 
-function showDivs2(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex2-1].style.display = "block";
+	function plusDivs2(n) {
+	  showDivs2(slideIndex2 += n);
+	}
+
+	function showDivs2(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides2");
+	  if (n > x.length) {slideIndex2 = 1}
+	  if (n < 1) {slideIndex2 = x.length} ;
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	  }
+	  x[slideIndex2-1].style.display = "block";
+	}
 }
 
 ;(function () {

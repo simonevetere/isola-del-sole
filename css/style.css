@@ -1051,6 +1051,16 @@ figure {
   border-bottom: 1px solid #fefefe;
   margin-bottom: 5%;
   padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .mydiv {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
 }
 
 .section {
